@@ -50,7 +50,7 @@ The computer mode uses the **Minimax Algorithm**, a recursive decision-making al
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/premium-tic-tac-toe/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/iamgajanan70/tic-toc-toe/issues).
 
 ## 📝 License
 
