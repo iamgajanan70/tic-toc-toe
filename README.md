@@ -1,57 +1,36 @@
-# 🎮 Premium Tic-Tac-Toe
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern, luxurious, and minimalistic Tic-Tac-Toe game built with Python and Tkinter. This application features a beautiful cinematic abstract wood background, a floating glass-card UI, and an unbeatable AI opponent powered by the Minimax algorithm.
+## Getting Started
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Tkinter](https://img.shields.io/badge/GUI-Tkinter-blueviolet?style=for-the-badge)
+First, run the development server:
 
-## ✨ Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **Modern UI/UX**: Sleek, fully-responsive dashboard aesthetic with customized anti-aliased fonts (Poppins) and vibrant player colors (Bright Orange `#FF8000` & Light Blue `#30AADC`).
-- **Luxurious Menu**: The main menu floats over a custom-generated dark wood texture background, offering an elevated visual experience.
-- **Two Game Modes**: 
-  - 👥 **1 vs 1**: Play locally with a friend on the same machine.
-  - 🤖 **Play vs Computer**: Challenge an unbeatable AI that uses the strict **Minimax algorithm**—it will never lose!
-- **Score Tracking**: Built-in scoreboard to keep track of X wins, O wins, and Draws during a session.
-- **Hover Animations**: Subtle glowing hover effects on menu items for interactive feedback.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🛠️ Prerequisites
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Before you begin, ensure you have met the following requirements:
-- **Python 3.x** installed on your system.
-- **Pillow (PIL)** library for advanced image rendering.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🚀 Installation & Setup
+## Learn More
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/iamgajanan70/tic-tac-toe.git
-   cd premium-tic-tac-toe
-   ```
+To learn more about Next.js, take a look at the following resources:
 
-2. **Install the required dependencies:**
-   ```bash
-   pip install Pillow
-   ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-3. **Run the game!**
-   ```bash
-   python gaju.py
-   ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 📂 Project Structure
+## Deploy on Vercel
 
-- `gaju.py`: The main game script containing UI layouts, game logic, and the minimax AI algorithm.
-- `wood_bg.png`: The custom abstract wood texture used for the background of the main menu.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 🧠 How the AI Works
-
-The computer mode uses the **Minimax Algorithm**, a recursive decision-making algorithm commonly used in game theory. It evaluates all over possible future moves to choose the absolutely optimal path, ensuring that the computer will either win or force a draw. It is mathematically impossible to beat!
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/iamgajanan70/tic-toc-toe/issues).
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
