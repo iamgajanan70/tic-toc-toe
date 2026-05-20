@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-syne: var(--font-syne);
+  --font-lexend: var(--font-lexend-mega);
+  --font-mono: var(--font-space-mono);
+
+  --color-neo-yellow: #fde047;
+  --color-neo-orange: #fb923c;
+  --color-neo-teal: #2dd4bf;
+  --color-neo-pink: #f472b6;
+  --color-neo-purple: #a78bfa;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@utility neo-border {
+  border: 3px solid black;
+}
+
+@utility neo-shadow {
+  box-shadow: 4px 4px 0px 0px #000;
+}
+
+@utility neo-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #000;
+}
+
+@utility neo-shadow-lg {
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+@utility neo-button {
+  @apply neo-border neo-shadow px-6 py-3 font-bold uppercase transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none hover:-translate-x-[2px] hover:-translate-y-[2px] hover:neo-shadow-lg disabled:opacity-50 disabled:pointer-events-none;
+}
+
+@utility neo-card {
+  @apply neo-border neo-shadow p-6 bg-white;
+}
+
+@utility neo-input {
+  @apply neo-border p-3 focus:outline-none focus:bg-neo-yellow transition-colors font-mono placeholder:text-black/50;
+}
+
+@layer base {
+  input[type="text"], input[type="email"] {
+    @apply neo-input;
+  }
+}
